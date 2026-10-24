@@ -1212,7 +1212,7 @@ uint8_t rx8025t_get_timer_counter(rx8025t_handle_t *handle, uint16_t *counter)
         
         return 1;                                                                          /* return error */
     }
-    *counter = (uint16_t)(((uint16_t)buf[1]) << 8) | buf[0];                               /* set counter */
+    *counter = (uint16_t)(((uint16_t)(buf[1] & 0x0F)) << 8) | buf[0];                      /* set counter */
     
     return 0;                                                                              /* success return 0 */
 }

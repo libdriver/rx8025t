@@ -111,8 +111,8 @@ typedef enum
  */
 typedef enum
 {
-    RX8025T_TIMER_CLOCK_4096_HZ = 0x00,        /**< 244.14 us */
-    RX8025T_TIMER_CLOCK_64_HZ   = 0x01,        /**< 4096 15.625 ms */
+    RX8025T_TIMER_CLOCK_4096_HZ = 0x00,        /**< 4096hz */
+    RX8025T_TIMER_CLOCK_64_HZ   = 0x01,        /**< 64hz */
     RX8025T_TIMER_CLOCK_1_HZ    = 0x02,        /**< 1 hz */
     RX8025T_TIMER_CLOCK_MINUTE  = 0x03,        /**< 1 minute */
 } rx8025t_timer_clock_t;
